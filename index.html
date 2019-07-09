@@ -25,22 +25,48 @@
     </div><br><br><br>
 
     <div class="container">
-            <h2>JQuery calculator</h2>
-            <label for="jqInput1"><b>Input value</b></label>&nbsp;
-            <input id="jqInput1" type="number" placeholder="Enter numbers only"><br><br>
-            <label for="jqInput2"><b>Input value</b></label>&nbsp;
-            <input id="jqInput2" type="number" placeholder="Enter numbers only"><br><br>
-            <button id="jqplus">&#43;</button>
-            <button id="jqminus">&#8722;</button>
-            <button id="jqtimes">&#215;</button>
-            <button id="jqdivide">&#247;</button><br><br>
-            <div class="answer-container">
-                <h4>Answer:</h4>
-                <span id="jqAnswer"></span>
-            </div>
-        </div>
+        <h2>JQuery calculator</h2>
+        <label for="jqInput1"><b>Input value</b></label>&nbsp;
+        <input id="jqInput1" type="number" placeholder="Enter numbers only"><br><br>
+        <label for="jqInput2"><b>Input value</b></label>&nbsp;
+        <input id="jqInput2" type="number" placeholder="Enter numbers only"><br><br>
+        <button id="jqplus">&#43;</button>
+        <button id="jqminus">&#8722;</button>
+        <button id="jqtimes">&#215;</button>
+        <button id="jqdivide">&#247;</button><br><br>
+        <div class="answer-container">
+            <h4>Answer:</h4>
+            <span id="jqAnswer"></span>
+        </div>  
+    </div>
+    <br><br><br>
+
+    <form id="cal-container" name="calculator">
+            <span id="brand">CASIO</span>
+            <input id="display" type="textfield" name="ans" value="" placeholder="0">
+            <input id="divide" type="button" value="/">
+            <input id="times" type="button" value="*">
+            <input id="minus" type="button" value="-">
+            <input id="plus" type="button" value="+">
+            <input id="seven" type="button" value="7">
+            <input id="eight" type="button" value="8">
+            <input id="nine" type="button" value="9">
+            <input id="four" type="button" value="4">
+            <input id="five" type="button" value="5">
+            <input id="six" type="button" value="6">
+            <input id="one" type="button" value="1">
+            <input id="two" type="button" value="2">
+            <input id="three" type="button" value="3">
+            <input id="zero" type="button" value="0">
+            <input id="point" type="button" value=".">
+            <input id="percent" type="button" value="%">
+            <input id="clear" type="reset" value="c">
+            <input id="equals" type="button" value="=">
+        </form>
+
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src=jquery.js></script>
+    <script src="miniCal.js"></script>
 </body>
 </html>

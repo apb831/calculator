@@ -22,3 +22,66 @@ button{
     border: solid 1px black;
     padding: 10px;
 }
+
+/****************************************************/
+
+#cal-container{
+    display: grid;
+    background-color: #adb1b8;
+    border-radius: 5px;
+    grid-template-columns: 40px 40px 40px 40px;
+    padding: 25px;
+    grid-template-areas:
+    "brand brand brand brand"
+    "display display display display"
+    "divide times minus plus"
+    "seven eight nine plus"
+    "four five six percent"
+    "one two three equals"
+    "clear zero point equals";
+    grid-gap: 10px 10px;
+    width: 190px;   
+}
+
+#brand{
+    font-size: 16px !important;
+    color: white;
+    grid-area: brand;
+}
+
+#display{grid-area: display}
+#divide{grid-area: divide}
+#times{grid-area: times}
+#minus{grid-area: minus}
+#plus{grid-area: plus}
+#equals{grid-area: equals; color: blue}
+#nine{grid-area: nine}
+#eight{grid-area: eight}
+#seven{grid-area: seven}
+#six{grid-area: six}
+#five{grid-area: five;}
+#four{grid-area: four}
+#three{grid-area: three}
+#two{grid-area: two}
+#one{grid-area: one}
+#percent{grid-area: percent}
+#cal-container input{font-size: 22px}
+#clear{grid-area: clear;color: red}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,8 +6,7 @@ $("#jqplus, #jqminus, #jqtimes, #jqdivide").click(function(){
         case "jqplus":
             input1 = Number(input1); input2 = Number(input2);
             jqCheck(input1,input2)? add(input1,input2): jqValError();
-            function add(input1, input2){
-            var sum = input1 + input2;jqAnswer(sum);}break;
+            function add(input1, input2){var sum = input1 + input2;jqAnswer(sum);}break;
 
         case "jqminus":
             input1 = Number(input1); input2 = Number(input2);
@@ -23,7 +22,7 @@ $("#jqplus, #jqminus, #jqtimes, #jqdivide").click(function(){
             input1 = Number(input1); input2 = Number(input2);
             jqCheck(input1,input2)? division(input1,input2): jqValError();
             function division(input1, input2){var quotient = input1 / input2;jqAnswer(quotient);}break;  
-    }   
+    }
 });
 
 function jqCheck(input1,input2){if( input1 =="" || input2 =="" ){return false;}else{return true;}}
